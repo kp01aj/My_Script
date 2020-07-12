@@ -1,6 +1,6 @@
 #!/bin/bash
 #**************************
-# CLH - CHECK LINUX HACKED
+# CLA - CHECK LINUX ATTACKED
 # by Angel J. Reynoso ~ kp01
 # kp01aj@gmail.com
 # Date: July 11 2020

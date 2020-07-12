@@ -6,9 +6,20 @@
 # Date: July 11 2020
 #**************************
 
-# Paso 1
-# VERIFICAR INICIAR SESIÓN ACTUAL
-# Verificando inició sesión de sesion actual en el servidor. 
+# Description.
+##############
+# Attackers who compromise a system take precautions while performing illegal activities and always
+# try to hide their movements. The attacker always installs some variant of backdoor on the compromised
+# system to maintain access.
+
+# Each incident leaves some evidence. If a team is compromised, it will definitely behave differently.
+# In this script some checks will be executed to generate a report that will help you know if your team
+# has been compromised.
+
+
+# Step 1
+# VERIFY SIGN IN CURRENT SESSION
+# Verifying you are currently logged into the server.
 w
 
 # Paso 2

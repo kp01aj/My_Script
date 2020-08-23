@@ -4,7 +4,7 @@
 ############################
 
 #Set permises
-Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 #Variables
 #PATH Verification.
@@ -54,8 +54,10 @@ Set-Location $PAQ_INSTALL
 Move-Item -Path .\wallpaper.jpg -Destination $RUTA1
 
 # set Regedit for Background
-Set-Location -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\System\
+Set-Location -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\
+New-Item -Path . -name 'System'
 
+Set-Location -Path  .\System\
 New-ItemProperty -Path . -name 'Wallpaper' -value "$RUTA1\wallpaper.jpg" -propertyType "string"
 New-ItemProperty -Path . -name 'WallpaperStyle' -value '4' -propertyType "string"
 
